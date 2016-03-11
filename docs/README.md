@@ -55,7 +55,7 @@ virsh # edit debian8
 <pre>
 &ltinterface type='bridge'/&gt
 ..
-&ltsource brige='br1'/&gt
+&ltsource bridge='br1'/&gt
 &ltvirtualport type='openvswitch'/&gt
 </pre>
 </li>
