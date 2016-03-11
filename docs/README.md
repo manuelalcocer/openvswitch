@@ -37,3 +37,35 @@
 # ovs-vsctl set interface patch1 options:peer=patch0 
 </pre>
 </ol>
+
+## Conectar las MVs al bridge br1
+Parto desde el punto donde las MVs ya están creadas y tienen una interfaz.
+<ol>
+<li>Accedemos a <b>virsh</b>:
+<pre>
+$ virsh -c qemu:///system
+</pre>
+</li>
+<li>Editamos una de las máquinas:
+<pre>
+virsh # edit debian8
+</pre>
+</li>
+<li>En la zona de interfaz de red configuramos dejando estos dos valores:
+<pre>
+<interface type='bridge'>
+..
+..
+<virtualport type='openvswitch'/>
+</pre>
+</li>
+<li>Guardamos.</li>
+<li>Si entramos de nuevo en la configuración se verá que se ha añadido automaticamente una línea como esta:
+<pre>
+...
+<parameters interfaceid='c7e2363e8.....' />
+</virtualpor>
+...
+</pre>
+</li>
+</ol>
