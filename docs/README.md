@@ -53,10 +53,10 @@ virsh # edit debian8
 </li>
 <li>En la zona de interfaz de red configuramos dejando estos dos valores:
 <pre>
-\<interface type='bridge'\>
+\\<interface type='bridge'\\>
 ..
 ..
-\<virtualport type='openvswitch'/\>
+\\<virtualport type='openvswitch'/\\>
 </pre>
 </li>
 <li>Guardamos.</li>
