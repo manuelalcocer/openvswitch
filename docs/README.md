@@ -60,7 +60,7 @@ virsh # edit debian8
 </pre>
 </li>
 <li>Guardamos.</li>
-<li>Si entramos de nuevo en la configuración se verá que se ha añadido automaticamente una línea como esta:
+<li>Si entramos de nuevo en la configuración se verá que se ha añadido automáticamente una línea como esta:
 <pre>
 ...
 &ltparameters interfaceid='c7e2363e8.....' /&gt
