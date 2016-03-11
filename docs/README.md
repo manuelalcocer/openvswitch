@@ -46,7 +46,7 @@ Parto desde el punto donde las MVs ya están creadas y tienen una interfaz.
 $ virsh -c qemu:///system
 </pre>
 </li>
-<li>Editamos una de las máquinas:
+<li>Editamos una de las máquinas (repetir este paso con la/s demas máquinas):
 <pre>
 virsh # edit debian8
 </pre>
@@ -68,4 +68,39 @@ virsh # edit debian8
 ...
 </pre>
 </li>
+<li>Si miramos el estado de <b>ovs</b> con el comando:
+<pre>
+# ovs-vsctl show
+</pre>
+Se puede ver como al ejecutar las máquinas se han creado 2 interfaces en el bridge <b>br1</b>
+<pre>
+ Bridge "br0"
+        Port "eth0"
+            Interface "eth0"
+        Port "patch0"
+            Interface "patch0"
+                type: patch
+                options: {peer="patch1"}
+        Port "br0"
+            Interface "br0"
+                type: internal
+    Bridge "br1"
+        Port "vnet1"
+            Interface "vnet1"
+        Port "vnet0"
+            Interface "vnet0"
+        Port "br1"
+            Interface "br1"
+                type: internal
+        Port "patch1"
+            Interface "patch1"
+                type: patch
+                options: {peer="patch0"}
+</pre>
+</li>
+</ol>
+## FIN
+## TODO:
+<ol>
+<li>Conexión de MVs a <b>VLANS</b> con <b>OVS</b> y <b>KVM</b></li>
 </ol>
