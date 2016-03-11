@@ -1,8 +1,9 @@
 # Openvswitch y kvm
 ![alt_tag](images/diagrama1.png?raw_true "Esquema de trabajo")
 ## Creación de bridges y patchs
-
-1. Crear el bridge __br0__:
+<ol>
+<li>Crear el bridge __br0__:</li>
+</ol>
 ~~~
 # ovs-vsctl add-br br0
 # ip link set br0 up
