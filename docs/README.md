@@ -1,5 +1,7 @@
 # Openvswitch y kvm
+<center>
 <img align=center src=images/diagrama1.png border=0>
+</center>
 ## Creación de bridges y patchs
 <ol>
 <li>Crear el bridge <b>br0</b>:</li>
