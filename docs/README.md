@@ -53,18 +53,18 @@ virsh # edit debian8
 </li>
 <li>En la zona de interfaz de red configuramos dejando estos dos valores:
 <pre>
-\\<interface type='bridge'\\>
+&ltinterface type='bridge'/&gt
 ..
 ..
-\\<virtualport type='openvswitch'/\\>
+&ltvirtualport type='openvswitch'/&gt
 </pre>
 </li>
 <li>Guardamos.</li>
 <li>Si entramos de nuevo en la configuración se verá que se ha añadido automaticamente una línea como esta:
 <pre>
 ...
-\<parameters interfaceid='c7e2363e8.....' /\>
-\</virtualport\>
+&ltparameters interfaceid='c7e2363e8.....' /&gt
+&lt/virtualport&gt
 ...
 </pre>
 </li>
