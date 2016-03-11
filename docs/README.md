@@ -46,7 +46,7 @@ Parto desde el punto donde las MVs ya están creadas y tienen una interfaz.
 $ virsh -c qemu:///system
 </pre>
 </li>
-<li>Editamos una de las máquinas (repetir este paso con la/s demas máquinas):
+<li>Editamos una de las máquinas (repetir este paso con la/s demás máquinas):
 <pre>
 virsh # edit debian8
 </pre>
