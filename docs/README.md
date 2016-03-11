@@ -1,5 +1,6 @@
 # Openvswitch y kvm
 ![alt_tag](images/diagrama1.png?raw_true "Esquema de trabajo")
+<img align=center src=images/diagrama1.png border=0>
 ## Creación de bridges y patchs
 <ol>
 <li>Crear el bridge <b>br0</b>:</li>
