@@ -2,18 +2,18 @@
 ![alt_tag](images/diagrama1.png?raw_true "Esquema de trabajo")
 ## Creación de bridges y patchs
 <ol>
-<li>Crear el bridge <i>br0</i>:</li>
+<li>Crear el bridge <b>br0</b>:</li>
 
 <pre>
 # ovs-vsctl add-br br0
 # ip link set br0 up
 </pre>
-<li>Añadir el interfaz <i>eth0</i> al bridge <i>br0</i>:
+<li>Añadir el interfaz <b>eth0</b> al bridge <b>br0</b>:
 <pre>
 # ovs-vsctl add-port br0 eth0
 # ip link set eth0 up
 </pre>
-<li>Ahora se puede asignar una ip a <i>br0</i>:</li>
+<li>Ahora se puede asignar una ip a <b>br0</b>:</li>
 - Por DHCP (esta es la que yo seguiré):
 <pre>
 # dhclient br0
