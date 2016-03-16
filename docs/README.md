@@ -4,11 +4,13 @@
 </div>
 ## Creación de bridges y patchs
 <ol>
-<li>Crear el bridge <b>br0</b>:</li>
+<li>Crear el bridge <b>br0</b> y <b>br1</b>:</li>
 
 <pre>
 # ovs-vsctl add-br br0
+# ovs-vsctl add-br br1
 # ip link set br0 up
+# ip link set br1 up
 </pre>
 <li>Añadir el interfaz <b>eth0</b> al bridge <b>br0</b>:
 <pre>
