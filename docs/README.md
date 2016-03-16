@@ -4,7 +4,7 @@
 </div>
 ## Creación de bridges y patchs
 <ol>
-<li>Crear el bridge <b>br0</b> y <b>br1</b>:</li>
+<li>Crear los bridges <b>br0</b> y <b>br1</b>:</li>
 
 <pre>
 # ovs-vsctl add-br br0
